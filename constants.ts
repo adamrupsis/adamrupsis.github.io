@@ -22,7 +22,7 @@ const AIAA_PROJECTS: Project[] = [
     fullDescription: `- Created a preliminary model of the 2025-26 competition aircraft in NASA's software
 - Determined fuselage sizing based on passenger and cargo subsystem considerations and center of gravity calculations
 - Validated preliminary parasitic drag estimates using OpenVSP's drag analysis tool`,
-    imageUrl: 'https://picsum.photos/800/600?random=10',
+    imageUrl: 'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/Screenshot%202025-10-28%20202618.png?raw=true',
     technologies: ['NASA OpenVSP', 'Aerodynamics', 'Drag Analysis'],
     link: '#',
     github: '#',
@@ -80,7 +80,12 @@ const AIAA_PROJECTS: Project[] = [
 - Lead final safety and controls checks before every flight to minimize accidents and failed tests
 - Provide instant feedback to the team based on aircraft behaviors in-flight
 - Manage the process of aircraft assembly upon arrival to ensure the safe, reliable, and efficient setup of the aircraft`,
-    imageUrl: 'https://picsum.photos/800/600?random=13',
+    imageUrl: 'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
+    images: [
+      'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
+      'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_SAE_Adv_autoland_6_finally%20-%20frame%20at%200m27s.jpg?raw=true',
+      'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_3%20-%20frame%20at%200m0s.jpg?raw=true'
+    ],
     technologies: ['Flight Operations', 'Pilot', 'Safety Management', 'Aircraft Assembly'],
     link: '#',
     github: '#',

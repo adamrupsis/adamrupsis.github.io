@@ -7,12 +7,29 @@ export const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [imageError, setImageError] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
   const project = ALL_PROJECTS.find((p) => p.id === id);
+  const hasMultipleImages = project?.images && project.images.length > 1;
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setCurrentImageIndex(0);
+    setImageError(false);
   }, [id]);
+
+  // Auto-cycle slideshow
+  useEffect(() => {
+    if (!hasMultipleImages) return;
+
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => 
+        project?.images ? (prev + 1) % project.images.length : 0
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [hasMultipleImages, project]);
 
   if (!project) {
     return (
@@ -28,6 +45,24 @@ export const ProjectDetail: React.FC = () => {
       </div>
     );
   }
+
+  const currentImageUrl = (project.images && project.images.length > 0) 
+    ? project.images[currentImageIndex] 
+    : project.imageUrl;
+
+  const nextImage = () => {
+    if (project.images) {
+      setCurrentImageIndex((prev) => (prev + 1) % project.images!.length);
+      setImageError(false);
+    }
+  };
+
+  const prevImage = () => {
+    if (project.images) {
+      setCurrentImageIndex((prev) => (prev - 1 + project.images!.length) % project.images!.length);
+      setImageError(false);
+    }
+  };
 
   return (
     <article className="max-w-4xl mx-auto px-6 py-12 md:py-20">
@@ -62,21 +97,64 @@ export const ProjectDetail: React.FC = () => {
         </p>
       </header>
 
-      {/* Main Image */}
-      <div className="rounded-2xl overflow-hidden shadow-2xl mb-12 bg-white aspect-video flex items-center justify-center border border-slate-200">
+      {/* Main Image / Slideshow */}
+      <div className="rounded-2xl overflow-hidden shadow-2xl mb-12 bg-slate-100 aspect-video flex items-center justify-center border border-slate-200 relative group select-none">
         {!imageError ? (
           <img 
-            src={project.imageUrl} 
-            alt={project.title} 
-            className="w-full h-full object-contain p-4"
+            src={currentImageUrl} 
+            alt={`${project.title} - View ${currentImageIndex + 1}`}
+            className="w-full h-full object-cover transition-opacity duration-500"
             onError={() => setImageError(true)}
           />
         ) : (
           <div className="flex flex-col items-center justify-center text-slate-400 p-8 text-center">
             <Icon name="close" size={48} className="mb-4 opacity-20" />
             <p className="text-sm font-medium">Image not found</p>
-            <p className="text-xs mt-2 font-mono bg-slate-100 px-2 py-1 rounded">{project.imageUrl}</p>
+            <p className="text-xs mt-2 font-mono bg-slate-100 px-2 py-1 rounded break-all max-w-md">{currentImageUrl}</p>
           </div>
+        )}
+
+        {/* Slideshow Controls */}
+        {hasMultipleImages && (
+          <>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                prevImage();
+              }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-md transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 z-10"
+              aria-label="Previous image"
+            >
+              <Icon name="chevron-left" size={24} />
+            </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                nextImage();
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white text-slate-800 shadow-md transition-all opacity-0 group-hover:opacity-100 focus:opacity-100 z-10"
+              aria-label="Next image"
+            >
+              <Icon name="chevron-right" size={24} />
+            </button>
+
+            {/* Dots */}
+            <div className="absolute bottom-4 left-0 w-full flex justify-center space-x-2 z-10">
+              {project.images!.map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    setCurrentImageIndex(idx);
+                    setImageError(false);
+                  }}
+                  className={`w-2.5 h-2.5 rounded-full transition-all shadow-sm ${
+                    idx === currentImageIndex ? 'bg-primary scale-110' : 'bg-white/60 hover:bg-white backdrop-blur-[2px]'
+                  }`}
+                  aria-label={`Go to image ${idx + 1}`}
+                />
+              ))}
+            </div>
+          </>
         )}
       </div>
 
