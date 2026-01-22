@@ -18,19 +18,6 @@ export const ProjectDetail: React.FC = () => {
     setImageError(false);
   }, [id]);
 
-  // Auto-cycle slideshow
-  useEffect(() => {
-    if (!hasMultipleImages) return;
-
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => 
-        project?.images ? (prev + 1) % project.images.length : 0
-      );
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [hasMultipleImages, project]);
-
   if (!project) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center text-center px-6">
