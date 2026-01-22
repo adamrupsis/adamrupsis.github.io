@@ -51,7 +51,7 @@ const AIAA_PROJECTS: Project[] = [
     fullDescription: `- Conducted tests in Georgia Tech's low speed wind tunnel to obtain a preliminary drag estimate for banners of various sizes and materials to feed into scoring analysis and fuselage design
 - Designed a testing mount and release system to attach to a load cell and obtain drag measurements
 - Analyzed data and interpolated results to get a rough estimate for banner drag at higher speeds to feed the design of the deployment and release mechanism`,
-    imageUrl: 'https://picsum.photos/800/600?random=11',
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_170751047_exported_8611.jpg?raw=true',
     images: [
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_161026408.jpg?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_170751047_exported_8611.jpg?raw=true'
