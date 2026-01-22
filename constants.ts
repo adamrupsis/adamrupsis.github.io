@@ -22,7 +22,7 @@ const AIAA_PROJECTS: Project[] = [
     fullDescription: `- Created a preliminary model of the 2025-26 competition aircraft in NASA's software
 - Determined fuselage sizing based on passenger and cargo subsystem considerations and center of gravity calculations
 - Validated preliminary parasitic drag estimates using OpenVSP's drag analysis tool`,
-    imageUrl: 'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/Screenshot%202025-10-28%20202618.png?raw=true',
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202025-10-28%20202618.png?raw=true',
     technologies: ['NASA OpenVSP', 'Aerodynamics', 'Drag Analysis'],
     link: '#',
     github: '#',
