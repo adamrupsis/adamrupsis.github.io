@@ -99,7 +99,7 @@ const AIAA_PROJECTS: Project[] = [
     fullDescription: `- Used laser cutters, waterjets, and 3D printers to facilitate the manufacturing of balsa and ply wood, carbon fiber, and plastics
 - Strengthened joints using wet layups of carbon fiber and epoxy
 - Led a team through the manufacturing of multiple aircraft using wood and composite techniques`,
-    imageUrl: 'https://picsum.photos/800/600?random=14',
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20250412_100154749.jpg?raw=true',
     technologies: ['Composites', 'Laser Cutting', '3D Printing', 'Manufacturing'],
     link: '#',
     github: '#',
