@@ -116,8 +116,8 @@ export const ALL_PROJECTS: Project[] = [
 
 export const FEATURED_PROJECTS: Project[] = [
   AIAA_PROJECTS[1], // Fuselage
-  AIAA_PROJECTS[4], // Flight Testing
-  AIAA_PROJECTS[5]  // Manufacturing
+  AIAA_PROJECTS[3], // Banner Deployment
+  AIAA_PROJECTS[0]  // OpenVSP
 ];
 
 export const ABOUT_TEXT = `Aerospace engineering BS/MS student at the Georgia Institute of Technology with experience in aircraft design, team leadership, and flight testing. Passionate about contributing to the development of advanced flight systems, particularly high-efficiency airframes and autonomous control architectures.`;

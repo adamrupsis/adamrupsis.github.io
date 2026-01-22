@@ -36,7 +36,7 @@ export const Home: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-primary/30 to-gtgold/30 rounded-full blur-3xl -z-10 transform scale-90 translate-y-10"></div>
           <div className="relative aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
             <img 
-              src="https://picsum.photos/800/800?grayscale" 
+              src="https://github.com/adamrupsis/Portfolio_Website/blob/main/georgia-tech-joins-cumu.png?raw=true" 
               alt="Adam Rupsis" 
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
             />
