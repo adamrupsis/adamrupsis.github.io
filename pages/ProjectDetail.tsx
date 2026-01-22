@@ -98,16 +98,16 @@ export const ProjectDetail: React.FC = () => {
       </header>
 
       {/* Main Image / Slideshow */}
-      <div className="rounded-2xl overflow-hidden shadow-2xl mb-12 bg-slate-100 aspect-video flex items-center justify-center border border-slate-200 relative group select-none">
+      <div className="rounded-2xl overflow-hidden shadow-2xl mb-12 bg-slate-100 border border-slate-200 relative group select-none">
         {!imageError ? (
           <img 
             src={currentImageUrl} 
             alt={`${project.title} - View ${currentImageIndex + 1}`}
-            className="w-full h-full object-cover transition-opacity duration-500"
+            className="w-full h-auto block transition-opacity duration-500"
             onError={() => setImageError(true)}
           />
         ) : (
-          <div className="flex flex-col items-center justify-center text-slate-400 p-8 text-center">
+          <div className="flex flex-col items-center justify-center text-slate-400 p-8 text-center min-h-[400px]">
             <Icon name="close" size={48} className="mb-4 opacity-20" />
             <p className="text-sm font-medium">Image not found</p>
             <p className="text-xs mt-2 font-mono bg-slate-100 px-2 py-1 rounded break-all max-w-md">{currentImageUrl}</p>
