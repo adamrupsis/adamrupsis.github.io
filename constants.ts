@@ -8,7 +8,6 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: 'GitHub', url: 'https://github.com', icon: 'github' },
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/adam-rupsis/', icon: 'linkedin' },
   { platform: 'Email', url: 'mailto:arupsis3@gatech.edu', icon: 'mail' },
 ];
@@ -69,7 +68,7 @@ const AIAA_PROJECTS: Project[] = [
     fullDescription: `- Co-led a team of ~10 members in the design of a system to reliably deploy and release a 6 foot long banner remotely
 - Tested the system statically under expected loads based on wind tunnel testing
 - Attached the banner to a test-bed airplane and verified reliable operation in-flight`,
-    imageUrl: 'https://picsum.photos/800/600?random=12',
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Picture1.png?raw=true',
     technologies: ['Mechanical Design', 'Team Leadership', 'Rapid Prototyping'],
     link: '#',
     github: '#',
