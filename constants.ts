@@ -82,11 +82,11 @@ const AIAA_PROJECTS: Project[] = [
 - Manage the process of aircraft assembly upon arrival to ensure the safe, reliable, and efficient setup of the aircraft`,
     imageUrl: 'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
     images: [
-      'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
-      'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_SAE_Adv_autoland_6_finally%20-%20frame%20at%200m27s.jpg?raw=true',
-      'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_3%20-%20frame%20at%200m0s.jpg?raw=true'
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_3%20-%20frame%20at%200m0s.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_SAE_Adv_autoland_6_finally%20-%20frame%20at%200m27s.jpg?raw=true'
     ],
-    technologies: ['Flight Operations', 'Pilot', 'Safety Management', 'Aircraft Assembly'],
+    technologies: ['Flight Testing', 'Test Pilot', 'Safety Management'],
     link: '#',
     github: '#',
     date: '2025'
