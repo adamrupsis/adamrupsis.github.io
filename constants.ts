@@ -80,7 +80,7 @@ const AIAA_PROJECTS: Project[] = [
 - Lead final safety and controls checks before every flight to minimize accidents and failed tests
 - Provide instant feedback to the team based on aircraft behaviors in-flight
 - Manage the process of aircraft assembly upon arrival to ensure the safe, reliable, and efficient setup of the aircraft`,
-    imageUrl: 'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_3%20-%20frame%20at%200m0s.jpg?raw=true',
     images: [
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_3%20-%20frame%20at%200m0s.jpg?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
