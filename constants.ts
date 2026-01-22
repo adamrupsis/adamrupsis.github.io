@@ -52,7 +52,11 @@ const AIAA_PROJECTS: Project[] = [
 - Designed a testing mount and release system to attach to a load cell and obtain drag measurements
 - Analyzed data and interpolated results to get a rough estimate for banner drag at higher speeds to feed the design of the deployment and release mechanism`,
     imageUrl: 'https://picsum.photos/800/600?random=11',
-    technologies: ['Wind Tunnel', 'Data Analysis', 'Experimental Testing', 'SolidWorks'],
+    images: [
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_161026408.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_170751047_exported_8611.jpg?raw=true'
+    ],
+    technologies: ['Wind Tunnel', 'Load Cell', 'Data Analysis'],
     link: '#',
     github: '#',
     date: '2025'
