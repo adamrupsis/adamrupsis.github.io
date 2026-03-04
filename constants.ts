@@ -37,11 +37,11 @@ const AIAA_PROJECTS: Project[] = [
 - Ensured structural integrity through local reinforcements in the banner, wing, and tail attachment points
 - Minimized weight to maximize aircraft performance`,
     imageUrl: 'https://github.com/PinapplePizzaaa/Portfolio_Website/blob/main/fuselage_structure.png?raw=true',
-    images: [
-      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260204_022131031.jpg?raw=true',
-      'https://github.com/PinapplePizzaaa/Portfolio_Website/blob/main/fuselage_structure.png?raw=true',
-      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true'
-    ],
+    //images: [
+    //  'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260204_022131031.jpg?raw=true',
+    //  'https://github.com/PinapplePizzaaa/Portfolio_Website/blob/main/fuselage_structure.png?raw=true',
+    //  'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true'
+    //],
     technologies: ['SolidWorks', 'Structural Analysis', 'Mechanism Design'],
     link: '#',
     github: '#',
