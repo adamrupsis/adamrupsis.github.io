@@ -32,20 +32,20 @@ const AIAA_PROJECTS: Project[] = [
     title: '2025-26 Competition Aircraft Fuselage',
     category: 'AIAA Design, Build, Fly Club',
     shortDescription: 'Design and structural implementation of the fuselage for the 2025-26 competition aircraft.',
-    fullDescription: `- Created the fuselage for the 2025-26 competition aircraft in SolidWorks
+    fullDescription: `- Created and led the manufacturing of the fuselage for the 2025-26 competition aircraft
 - Created mechanisms to restrain cargo and passengers and still allow for quick and easy loading
 - Ensured structural integrity through local reinforcements in the banner, wing, and tail attachment points
 - Minimized weight to maximize aircraft performance`,
-    imageUrl: 'https://github.com/PinapplePizzaaa/Portfolio_Website/blob/main/fuselage_structure.png?raw=true',
-    //images: [
-    //  'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260204_022131031.jpg?raw=true',
-    //  'https://github.com/PinapplePizzaaa/Portfolio_Website/blob/main/fuselage_structure.png?raw=true',
-    //  'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true'
-    //],
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-03-27%20101230.png?raw=true',
+    images: [
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260204_022131031.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-03-27%20101230.png?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true'
+    ],
     technologies: ['SolidWorks', 'Structural Analysis', 'Mechanism Design'],
     link: '#',
     github: '#',
-    date: '2025'
+    date: '2025/26'
   },
   {
     id: 'wind-tunnel-testing',

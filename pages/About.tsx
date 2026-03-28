@@ -59,7 +59,7 @@ export const About: React.FC = () => {
         <div className="md:col-span-7 space-y-8">
           <div>
             <h1 className="text-4xl font-bold text-slate-900 mb-4">About Me</h1>
-            <h2 className="text-xl text-primary font-medium mb-6">Aerospace Engineering BS/MS Student & Researcher</h2>
+            <h2 className="text-xl text-primary font-medium mb-6">Aerospace Engineering BS/MS Student at the Georgia Institute of Technology</h2>
             <div className="prose prose-slate text-slate-600 leading-relaxed">
               <p className="mb-4 text-lg">
                 I am an Aerospace Engineering student at the Georgia Institute of Technology with a strong focus on aircraft design, team leadership, and flight testing. I am passionate about contributing to the development of advanced flight systems, particularly high-efficiency airframes and autonomous control architectures.
