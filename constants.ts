@@ -36,8 +36,9 @@ const AIAA_PROJECTS: Project[] = [
 - Created mechanisms to restrain cargo and passengers and still allow for quick and easy loading
 - Ensured structural integrity through local reinforcements in the banner, wing, and tail attachment points
 - Minimized weight to maximize aircraft performance`,
-    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-03-27%20101230.png?raw=true',
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-05-18%20115259.png?raw=true',
     images: [
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-05-18%20115259.png?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260204_022131031.jpg?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-03-27%20101230.png?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true'

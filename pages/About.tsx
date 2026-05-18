@@ -38,7 +38,8 @@ export const About: React.FC = () => {
             </h3>
             <div className="mb-4">
               <p className="font-bold text-primary">Georgia Institute of Technology</p>
-              <p className="text-sm text-slate-700 font-medium">B.S. in Aerospace Engineering</p>
+              <p className="text-sm text-slate-700 font-medium">B.S. in Aerospace Engineering,</p>
+              <p className="text-sm text-slate-700 font-medium">Minor in Scientific and Engineering Computing</p>
               <div className="flex items-center text-sm text-slate-500 mt-2">
                 <Icon name="calendar" size={14} className="mr-2" />
                 May 2028
