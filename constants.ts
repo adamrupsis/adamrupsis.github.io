@@ -14,21 +14,33 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 const FLIGHTHOUSE_PROJECTS: Project[] = [
   {
-    id: 'flighthouse-internship',
-    title: 'VTOL UAV Mechanical Design',
+    id: 'flighthouse-tilt-rotor',
+    title: 'Tilt Rotor Mechanism Redesign',
     category: 'FlightHouse Engineering Internship',
-    shortDescription: 'Summer 2026 mechanical design internship: tilt rotor redesign, multi-copter flight testing, and static structural testing of a 55 lb UAV.',
-    fullDescription: `- Redesigned and optimized the tilt rotor mechanism for a long range, high efficiency VTOL UAV, eliminating the slop present in the previous design
-- Served as the test pilot for a series of flight tests on a Part 107 multi-copter
-- Designed and manufactured test fixtures and validated them with FEA
-- Wrote a test plan and executed static structural tests of a 55 lb UAV to inform future design iterations
-Due to the nature of FlightHouse's work, I am unable to show media from many of the projects I worked on.`,
+    shortDescription: 'Redesigned and optimized the tilt rotor mechanism for a long range, high efficiency VTOL UAV.',
+    fullDescription: `- Redesigned and optimized the tilt rotor mechanism for a long range, high efficiency VTOL UAV
+- Eliminated the slop present in the previous design`,
     imageUrl: '/images/flighthouse-tilt-rotor-cad.jpg',
     images: [
       '/images/flighthouse-tilt-rotor-cad.jpg',
       '/images/flighthouse-tilt-rotor.jpg'
     ],
-    technologies: ['Mechanism Design', 'FEA', 'Structural Testing', 'Test Fixtures', 'Flight Testing', 'Part 107'],
+    technologies: ['Mechanism Design', 'VTOL', 'UAV'],
+    link: '#',
+    github: '#',
+    date: 'Summer 2026'
+  },
+  {
+    id: 'flighthouse-other-projects',
+    title: 'Other Projects',
+    category: 'FlightHouse Engineering Internship',
+    shortDescription: 'Multi-copter flight testing and static structural testing of a 55 lb UAV during my summer 2026 internship.',
+    fullDescription: `- Served as the test pilot for a series of flight tests on a Part 107 multi-copter
+- Designed and manufactured test fixtures and validated them with FEA
+- Wrote a test plan and executed static structural tests of a 55 lb UAV to inform future design iterations
+Due to the nature of FlightHouse's work, I am unable to show media from many of the projects I worked on.`,
+    imageUrl: '/images/flighthouse-other-projects.jpg',
+    technologies: ['Flight Testing', 'Part 107', 'FEA', 'Test Fixtures', 'Structural Testing'],
     link: '#',
     github: '#',
     date: 'Summer 2026'
@@ -150,7 +162,7 @@ export const ALL_PROJECTS: Project[] = [
 ];
 
 export const FEATURED_PROJECTS: Project[] = [
-  FLIGHTHOUSE_PROJECTS[0], // FlightHouse internship
+  FLIGHTHOUSE_PROJECTS[0], // Tilt rotor redesign
   AIAA_PROJECTS[1], // Fuselage
   AIAA_PROJECTS[3]  // Banner Deployment
 ];
