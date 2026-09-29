@@ -8,9 +8,45 @@ export const NAV_ITEMS: NavItem[] = [
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: 'GitHub', url: 'https://github.com', icon: 'github' },
   { platform: 'LinkedIn', url: 'https://www.linkedin.com/in/adam-rupsis/', icon: 'linkedin' },
   { platform: 'Email', url: 'mailto:arupsis3@gatech.edu', icon: 'mail' },
+];
+
+const FLIGHTHOUSE_PROJECTS: Project[] = [
+  {
+    id: 'flighthouse-tilt-rotor',
+    title: 'Tilt Rotor Mechanism Redesign',
+    category: 'FlightHouse Engineering Internship',
+    shortDescription: 'Redesigned the tilt rotor mechanism for a long-range, high-efficiency VTOL UAV, cutting backlash from 2.5° to 0.5°.',
+    fullDescription: `- Redesigned and optimized the tilt rotor mechanism for a long-range, high-efficiency VTOL UAV
+- Reduced backlash in the tilt system from 2.5° to 0.5°, an 80% reduction from the previous design`,
+    imageUrl: '/images/flighthouse-tilt-rotor-cad.jpg',
+    images: [
+      '/images/flighthouse-tilt-rotor-cad.jpg',
+      '/images/flighthouse-tilt-rotor.jpg'
+    ],
+    technologies: ['Mechanism Design', 'VTOL', 'UAV', 'Backlash Reduction'],
+    link: '#',
+    github: '#',
+    date: 'Summer 2026'
+  },
+  {
+    id: 'flighthouse-other-projects',
+    title: 'Other Projects',
+    category: 'FlightHouse Engineering Internship',
+    shortDescription: 'Structural testing, composite manufacturing, and multi-copter flight testing during my summer 2026 internship.',
+    fullDescription: `- Designed and manufactured test fixtures for static structural testing of a 55 lb UAV
+- Analyzed the test fixtures with FEA prior to testing
+- Created the test plan and executed static structural tests, with results used to inform future design iterations
+- Manufactured a fiberglass fuselage using a composite wet layup process
+- Served as the test pilot for a series of flight tests on a Part 107 multi-copter
+Due to the nature of FlightHouse's work, I am unable to show media from many of the projects I worked on.`,
+    imageUrl: '/images/flighthouse-other-projects.jpg',
+    technologies: ['Structural Testing', 'FEA', 'Test Fixtures', 'Composites', 'Wet Layup', 'Flight Testing', 'Part 107'],
+    link: '#',
+    github: '#',
+    date: 'Summer 2026'
+  }
 ];
 
 const AIAA_PROJECTS: Project[] = [
@@ -18,41 +54,56 @@ const AIAA_PROJECTS: Project[] = [
     id: 'open-vehicle-sketch-pad',
     title: 'Open Vehicle Sketch Pad (VSP)',
     category: 'AIAA Design, Build, Fly Club',
-    shortDescription: 'Preliminary modeling and drag analysis of the 2025-26 competition aircraft using NASA\'s OpenVSP software.',
-    fullDescription: `- Created a preliminary model of the 2025-26 competition aircraft in NASA's software
-- Determined fuselage sizing based on passenger and cargo subsystem considerations and center of gravity calculations
-- Validated preliminary parasitic drag estimates using OpenVSP's drag analysis tool`,
-    imageUrl: 'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/Screenshot%202025-10-28%20202618.png?raw=true',
-    technologies: ['NASA OpenVSP', 'Aerodynamics', 'Drag Analysis'],
+    shortDescription: 'Aircraft modeling, drag estimation, and stability analysis for the 2025-26 and 2026-27 competition aircraft using NASA\'s OpenVSP and AVL.',
+    fullDescription: `- Created a preliminary model of the 2025-26 competition aircraft in NASA's OpenVSP
+- Determined fuselage sizing based on passenger and cargo subsystem requirements and center of gravity calculations
+- Validated preliminary parasitic drag estimates using OpenVSP's drag analysis tool
+- Now using OpenVSP and AVL to define the outer mold line (OML) of the 2026-27 competition aircraft and ensure it is stable`,
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202025-10-28%20202618.png?raw=true',
+    technologies: ['NASA OpenVSP', 'AVL', 'Aerodynamics', 'Drag Analysis', 'Stability'],
     link: '#',
     github: '#',
-    date: '2025'
+    date: '2025 – Present'
   },
   {
     id: 'aircraft-fuselage-2026',
     title: '2025-26 Competition Aircraft Fuselage',
     category: 'AIAA Design, Build, Fly Club',
-    shortDescription: 'Design and structural implementation of the fuselage for the 2025-26 competition aircraft.',
-    fullDescription: `- Created the fuselage for the 2025-26 competition aircraft in SolidWorks
-- Created mechanisms to restrain cargo and passengers and still allow for quick and easy loading
-- Ensured structural integrity through local reinforcements in the banner, wing, and tail attachment points
-- Minimized weight to maximize aircraft performance`,
-    imageUrl: 'https://github.com/PinapplePizzaaa/Portfolio_Website/blob/main/fuselage_structure.png?raw=true',
-    technologies: ['SolidWorks', 'Structural Analysis', 'Mechanism Design'],
+    shortDescription: 'Designed and led the manufacturing of the 2025-26 competition fuselage through three iterations, contributing to a 7th place finish out of 98 teams.',
+    fullDescription: `- Designed the fuselage for the 2025-26 competition aircraft in SolidWorks and led its manufacturing
+- Carried the design through three iterations, using flight test results to drive subsystem design changes
+- Created mechanisms to restrain cargo and passengers while still allowing for quick and easy loading
+- Ensured structural integrity through local reinforcements at the banner, wing, and tail attachment points
+- Minimized weight to maximize aircraft performance
+- The aircraft placed 7th out of 98 teams at the 2026 AIAA Design, Build, Fly competition`,
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-05-18%20115259.png?raw=true',
+    images: [
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-05-18%20115259.png?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260204_022131031.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-03-27%20101230.png?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260419_185806012.jpg?raw=true'
+    ],
+    technologies: ['SolidWorks', 'Structural Design', 'Mechanism Design', 'Iterative Design', 'Manufacturing'],
     link: '#',
     github: '#',
-    date: '2025'
+    date: '2025/26'
   },
   {
     id: 'wind-tunnel-testing',
     title: 'Wind Tunnel Testing',
     category: 'AIAA Design, Build, Fly Club',
-    shortDescription: 'Conducted low speed wind tunnel testing to analyze banner drag and validate design parameters.',
-    fullDescription: `- Conducted tests in Georgia Tech's low speed wind tunnel to obtain a preliminary drag estimate for banners of various sizes and materials to feed into scoring analysis and fuselage design
-- Designed a testing mount and release system to attach to a load cell and obtain drag measurements
-- Analyzed data and interpolated results to get a rough estimate for banner drag at higher speeds to feed the design of the deployment and release mechanism`,
-    imageUrl: 'https://picsum.photos/800/600?random=11',
-    technologies: ['Wind Tunnel', 'Data Analysis', 'Experimental Testing', 'SolidWorks'],
+    shortDescription: 'Conducted low speed wind tunnel testing to measure banner drag and feed the scoring analysis and fuselage design.',
+    fullDescription: `- Conducted tests in Georgia Tech's low speed wind tunnel to obtain preliminary drag estimates for banners of various sizes and materials
+- Designed a testing mount and release system that attached to a load cell to measure drag
+- Analyzed the data and extrapolated the results to estimate banner drag at higher flight speeds
+- Fed the drag estimates into the team's scoring analysis, the fuselage design, and the loads used to design the banner deployment and release mechanism`,
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_170751047_exported_8611.jpg?raw=true',
+    images: [
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_161026408.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20251019_170751047_exported_8611.jpg?raw=true'
+    ],
+    technologies: ['Wind Tunnel', 'Load Cell', 'Data Analysis', 'Test Fixture Design'],
     link: '#',
     github: '#',
     date: '2025'
@@ -61,12 +112,13 @@ const AIAA_PROJECTS: Project[] = [
     id: 'banner-deployment',
     title: 'Banner Deployment Mechanism',
     category: 'AIAA Design, Build, Fly Club',
-    shortDescription: 'Co-led the design and testing of a remote system to deploy and release a 6-foot banner in flight.',
-    fullDescription: `- Co-led a team of ~10 members in the design of a system to reliably deploy and release a 6 foot long banner remotely
-- Tested the system statically under expected loads based on wind tunnel testing
-- Attached the banner to a test-bed airplane and verified reliable operation in-flight`,
-    imageUrl: 'https://picsum.photos/800/600?random=12',
-    technologies: ['Mechanical Design', 'Team Leadership', 'Rapid Prototyping'],
+    shortDescription: 'Led a 10-member subteam through the design and manufacturing of a mechanism to remotely deploy and release an 8 ft banner in flight.',
+    fullDescription: `- Led a 10-member subteam through the design and manufacturing of a mechanism to remotely deploy and release an 8 ft banner
+- Sized the system using banner drag loads measured in wind tunnel testing
+- Tested the system statically under the expected flight loads
+- Attached the banner to a test-bed airplane and verified reliable deployment and release in flight`,
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/Picture1.png?raw=true',
+    technologies: ['Mechanical Design', 'Team Leadership', 'Rapid Prototyping', 'Static Testing'],
     link: '#',
     github: '#',
     date: '2025'
@@ -75,46 +127,53 @@ const AIAA_PROJECTS: Project[] = [
     id: 'flight-testing',
     title: 'Flight Testing',
     category: 'AIAA Design, Build, Fly Club',
-    shortDescription: 'Flight test pilot and safety lead for the 2025-26 competition season.',
-    fullDescription: `- Serve as the flight test pilot for the 2025-26 competition season for AIAA Design, Build, Fly and SAE aero design advanced teams
-- Lead final safety and controls checks before every flight to minimize accidents and failed tests
-- Provide instant feedback to the team based on aircraft behaviors in-flight
-- Manage the process of aircraft assembly upon arrival to ensure the safe, reliable, and efficient setup of the aircraft`,
-    imageUrl: 'https://github.com/adamrupsis/adamrupsis.github.io/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
+    shortDescription: 'Pilot for every flight test and competition flight, with the final go/no-go call on each one.',
+    fullDescription: `- Serve as the pilot for all flight tests and competition flights, and as a test pilot for the SAE Aero Design Advanced team
+- Make the final go/no-go decision on every flight
+- Lead final safety and controls checks before each flight to minimize accidents and failed tests
+- Provide instant feedback to the team based on aircraft behavior in flight, feeding design changes between iterations
+- Manage aircraft assembly on arrival at the field to ensure a safe, reliable, and efficient setup`,
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_3%20-%20frame%20at%200m0s.jpg?raw=true',
     images: [
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_3%20-%20frame%20at%200m0s.jpg?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_AIAA_banner_6_big%20-%20frame%20at%201m4s.jpg?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/11_23_2025_SAE_Adv_autoland_6_finally%20-%20frame%20at%200m27s.jpg?raw=true'
     ],
-    technologies: ['Flight Testing', 'Test Pilot', 'Safety Management'],
+    technologies: ['Flight Testing', 'Test Pilot', 'Safety Management', 'Go/No-Go Decisions'],
     link: '#',
     github: '#',
-    date: '2025'
+    date: '2025 – Present'
   },
   {
     id: 'manufacturing',
     title: 'Manufacturing',
     category: 'AIAA Design, Build, Fly Club',
-    shortDescription: 'Advanced manufacturing using composite materials, laser cutters, and 3D printing for aircraft production.',
-    fullDescription: `- Used laser cutters, waterjets, and 3D printers to facilitate the manufacturing of balsa and ply wood, carbon fiber, and plastics
+    shortDescription: 'Aircraft manufacturing with wood, carbon fiber, and composites using laser cutters, waterjets, and 3D printing.',
+    fullDescription: `- Used laser cutters, waterjets, and 3D printers to manufacture parts from balsa and plywood, carbon fiber, and plastics
 - Strengthened joints using wet layups of carbon fiber and epoxy
-- Led a team through the manufacturing of multiple aircraft using wood and composite techniques`,
-    imageUrl: 'https://picsum.photos/800/600?random=14',
-    technologies: ['Composites', 'Laser Cutting', '3D Printing', 'Manufacturing'],
+- Led a team through the manufacturing of multiple aircraft using wood and composite techniques
+- Lead daily meetings coordinating design, manufacturing, and troubleshooting to keep the project on schedule`,
+    imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20250412_100154749.jpg?raw=true',
+    images: [
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20250412_100154749.jpg?raw=true',
+      '/images/manufacturing-fuselage-ribs.jpg'
+    ],
+    technologies: ['Composites', 'Laser Cutting', '3D Printing', 'Waterjet', 'Wood Working', 'Team Leadership'],
     link: '#',
     github: '#',
-    date: '2025'
+    date: '2025 – Present'
   }
 ];
 
 export const ALL_PROJECTS: Project[] = [
+  ...FLIGHTHOUSE_PROJECTS,
   ...AIAA_PROJECTS
 ];
 
 export const FEATURED_PROJECTS: Project[] = [
+  FLIGHTHOUSE_PROJECTS[0], // Tilt rotor redesign
   AIAA_PROJECTS[1], // Fuselage
-  AIAA_PROJECTS[4], // Flight Testing
-  AIAA_PROJECTS[5]  // Manufacturing
+  AIAA_PROJECTS[3]  // Banner Deployment
 ];
 
 export const ABOUT_TEXT = `Aerospace engineering BS/MS student at the Georgia Institute of Technology with experience in aircraft design, team leadership, and flight testing. Passionate about contributing to the development of advanced flight systems, particularly high-efficiency airframes and autonomous control architectures.`;
