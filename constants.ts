@@ -12,6 +12,29 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { platform: 'Email', url: 'mailto:arupsis3@gatech.edu', icon: 'mail' },
 ];
 
+const FLIGHTHOUSE_PROJECTS: Project[] = [
+  {
+    id: 'flighthouse-internship',
+    title: 'VTOL UAV Mechanical Design',
+    category: 'FlightHouse Engineering Internship',
+    shortDescription: 'Summer 2026 mechanical design internship: tilt rotor redesign, multi-copter flight testing, and static structural testing of a 55 lb UAV.',
+    fullDescription: `- Redesigned and optimized the tilt rotor mechanism for a long range, high efficiency VTOL UAV, eliminating the slop present in the previous design
+- Served as the test pilot for a series of flight tests on a Part 107 multi-copter
+- Designed and manufactured test fixtures and validated them with FEA
+- Wrote a test plan and executed static structural tests of a 55 lb UAV to inform future design iterations
+Due to the nature of FlightHouse's work, I am unable to show media from many of the projects I worked on.`,
+    imageUrl: '/images/flighthouse-tilt-rotor-cad.jpg',
+    images: [
+      '/images/flighthouse-tilt-rotor-cad.jpg',
+      '/images/flighthouse-tilt-rotor.jpg'
+    ],
+    technologies: ['Mechanism Design', 'FEA', 'Structural Testing', 'Test Fixtures', 'Flight Testing', 'Part 107'],
+    link: '#',
+    github: '#',
+    date: 'Summer 2026'
+  }
+];
+
 const AIAA_PROJECTS: Project[] = [
   {
     id: 'open-vehicle-sketch-pad',
@@ -41,7 +64,8 @@ const AIAA_PROJECTS: Project[] = [
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-05-18%20115259.png?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260204_022131031.jpg?raw=true',
       'https://github.com/adamrupsis/Portfolio_Website/blob/main/Screenshot%202026-03-27%20101230.png?raw=true',
-      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true'
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260228_053223223.jpg?raw=true',
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20260419_185806012.jpg?raw=true'
     ],
     technologies: ['SolidWorks', 'Structural Analysis', 'Mechanism Design'],
     link: '#',
@@ -84,8 +108,8 @@ const AIAA_PROJECTS: Project[] = [
     id: 'flight-testing',
     title: 'Flight Testing',
     category: 'AIAA Design, Build, Fly Club',
-    shortDescription: 'Flight test pilot and safety lead for the 2025-26 competition season.',
-    fullDescription: `- Serve as the flight test pilot for the 2025-26 competition season for AIAA Design, Build, Fly and SAE aero design advanced teams
+    shortDescription: 'Flight test and competition pilot and safety lead for the 2025-26 season.',
+    fullDescription: `- Serve as the flight test and competition pilot for the 2025-26 season, and as a test pilot for the SAE Aero Design Advanced team
 - Lead final safety and controls checks before every flight to minimize accidents and failed tests
 - Provide instant feedback to the team based on aircraft behaviors in-flight
 - Manage the process of aircraft assembly upon arrival to ensure the safe, reliable, and efficient setup of the aircraft`,
@@ -98,7 +122,7 @@ const AIAA_PROJECTS: Project[] = [
     technologies: ['Flight Testing', 'Test Pilot', 'Safety Management'],
     link: '#',
     github: '#',
-    date: '2025'
+    date: '2025/26'
   },
   {
     id: 'manufacturing',
@@ -109,6 +133,10 @@ const AIAA_PROJECTS: Project[] = [
 - Strengthened joints using wet layups of carbon fiber and epoxy
 - Led a team through the manufacturing of multiple aircraft using wood and composite techniques`,
     imageUrl: 'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20250412_100154749.jpg?raw=true',
+    images: [
+      'https://github.com/adamrupsis/Portfolio_Website/blob/main/PXL_20250412_100154749.jpg?raw=true',
+      '/images/manufacturing-fuselage-ribs.jpg'
+    ],
     technologies: ['Composites', 'Laser Cutting', '3D Printing', 'Manufacturing'],
     link: '#',
     github: '#',
@@ -117,13 +145,14 @@ const AIAA_PROJECTS: Project[] = [
 ];
 
 export const ALL_PROJECTS: Project[] = [
+  ...FLIGHTHOUSE_PROJECTS,
   ...AIAA_PROJECTS
 ];
 
 export const FEATURED_PROJECTS: Project[] = [
+  FLIGHTHOUSE_PROJECTS[0], // FlightHouse internship
   AIAA_PROJECTS[1], // Fuselage
-  AIAA_PROJECTS[3], // Banner Deployment
-  AIAA_PROJECTS[0]  // OpenVSP
+  AIAA_PROJECTS[3]  // Banner Deployment
 ];
 
 export const ABOUT_TEXT = `Aerospace engineering BS/MS student at the Georgia Institute of Technology with experience in aircraft design, team leadership, and flight testing. Passionate about contributing to the development of advanced flight systems, particularly high-efficiency airframes and autonomous control architectures.`;

@@ -66,22 +66,48 @@ export const About: React.FC = () => {
                 I am an Aerospace Engineering student at the Georgia Institute of Technology with a strong focus on aircraft design, team leadership, and flight testing. I am passionate about contributing to the development of advanced flight systems, particularly high-efficiency airframes and autonomous control architectures.
               </p>
               <p className="mb-4">
-                Currently, I serve as a <strong>Sub-team Lead and Test Pilot</strong> for the AIAA Design, Build, Fly Team. As a sub-team lead, I lead weekly build sessions coordianating manufacturing, troubleshooting, and quality assurance to keep the project on schedule. My role as the pilot involves developing and executing test routines, calibrating control surfaces, collecting in-flight data, and providing instant feedback to improve the aircraft design.              </p>
+                Currently, I serve as <strong>Chief Engineer and Pilot</strong> for the AIAA Design, Build, Fly Team. Previously, as a sub-team lead, I led weekly build sessions coordinating manufacturing, troubleshooting, and quality assurance to keep the project on schedule. As the team's pilot, I develop and execute test routines, calibrate control surfaces, collect in-flight data, and provide instant feedback to improve the aircraft design.
+              </p>
+              <p className="mb-4">
+                In summer 2026, I worked as a <strong>Mechanical Design Intern</strong> at FlightHouse Engineering in Portland, Oregon, where I redesigned a VTOL UAV tilt rotor mechanism, flew multi-copter flight tests, and ran static structural tests on a 55 lb UAV.
+              </p>
             </div>
           </div>
 
           <div className="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
             <h3 className="text-lg font-bold text-slate-900 mb-4 flex items-center">
-              Current Leadership
+              Experience
             </h3>
             <div className="relative border-l-2 border-slate-200 pl-6 ml-2 space-y-6">
+              <div className="relative">
+                <span className="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-gtgold border-2 border-white shadow-sm"></span>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
+                  <h4 className="font-bold text-slate-800">FlightHouse Engineering</h4>
+                  <span className="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Summer 2026</span>
+                </div>
+                <p className="text-primary font-medium text-sm mb-3">Mechanical Design Intern</p>
+                <ul className="space-y-2 text-sm text-slate-600">
+                  <li className="flex items-start">
+                    <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
+                    <span>Redesigned the tilt rotor mechanism for a long range, high efficiency VTOL UAV, eliminating the slop in the previous design.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
+                    <span>Designed test fixtures, validated them with FEA, and executed static structural tests of a 55 lb UAV.</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
+                    <span>Served as test pilot for a series of Part 107 multi-copter flight tests.</span>
+                  </li>
+                </ul>
+              </div>
               <div className="relative">
                 <span className="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-gtgold border-2 border-white shadow-sm"></span>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-1">
                   <h4 className="font-bold text-slate-800">AIAA Design, Build, Fly Team</h4>
                   <span className="text-xs font-semibold bg-slate-100 text-slate-600 px-2 py-1 rounded">Aug 2024 – Present</span>
                 </div>
-                <p className="text-primary font-medium text-sm mb-3">Sub-team Lead and Pilot</p>
+                <p className="text-primary font-medium text-sm mb-3">Chief Engineer and Pilot (previously Sub-team Lead)</p>
                 <ul className="space-y-2 text-sm text-slate-600">
                   <li className="flex items-start">
                     <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-slate-400 rounded-full flex-shrink-0"></span>
@@ -104,7 +130,7 @@ export const About: React.FC = () => {
             <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
               <h3 className="font-bold text-slate-900 mb-4">Technical Skills</h3>
               <div className="flex flex-wrap gap-2">
-                {['MATLAB', 'SolidWorks (CSWA Certified)', 'OpenVSP', 'Fusion 360', 'AVL', 'Java'].map(skill => (
+                {['MATLAB', 'SolidWorks (CSWA Certified)', 'OpenVSP', 'FEA', 'Fusion 360', 'AVL', 'Java'].map(skill => (
                   <span key={skill} className="px-3 py-1.5 bg-white text-slate-700 text-xs font-medium rounded-md border border-slate-200 shadow-sm">
                     {skill}
                   </span>

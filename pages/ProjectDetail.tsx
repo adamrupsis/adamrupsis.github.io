@@ -90,7 +90,7 @@ export const ProjectDetail: React.FC = () => {
           <img 
             src={currentImageUrl} 
             alt={`${project.title} - View ${currentImageIndex + 1}`}
-            className="w-full h-auto block transition-opacity duration-500"
+            className="w-full h-auto max-h-[75vh] object-contain block transition-opacity duration-500"
             onError={() => setImageError(true)}
           />
         ) : (
