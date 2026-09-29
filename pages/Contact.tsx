@@ -12,7 +12,7 @@ export const Contact: React.FC = () => {
         <div className="flex flex-col space-y-6">
           {/* Email */}
           <a 
-            href="mailto:arupsis3@gatech.edu" 
+            href="mailto:adam.rupsis@gmail.com" 
             className="flex items-center group p-4 rounded-xl hover:bg-slate-50 transition-colors border border-transparent hover:border-slate-100"
           >
             <div className="w-12 h-12 bg-blue-50 text-primary rounded-full flex items-center justify-center mr-6 group-hover:scale-110 transition-transform">
@@ -20,7 +20,7 @@ export const Contact: React.FC = () => {
             </div>
             <div className="text-left">
               <p className="text-sm font-semibold text-slate-500 uppercase tracking-wide mb-1">Email</p>
-              <p className="text-lg md:text-xl font-medium text-slate-900 group-hover:text-primary transition-colors">arupsis3@gatech.edu</p>
+              <p className="text-lg md:text-xl font-medium text-slate-900 group-hover:text-primary transition-colors">adam.rupsis@gmail.com</p>
             </div>
           </a>
 
