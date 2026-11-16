@@ -57,7 +57,7 @@ export const About: React.FC = () => {
         <div className="md:col-span-5 flex flex-col items-center md:items-start">
           <div className="relative w-64 h-64 md:w-full md:h-auto md:aspect-[3/4] rounded-2xl overflow-hidden shadow-xl mb-8 border-4 border-white bg-slate-100">
             <img 
-              src="https://github.com/adamrupsis/Portfolio_Website/blob/main/georgia-tech-joins-cumu.png?raw=true" 
+              src="https://github.com/adamrupsis/adamrupsis.github.io/blob/main/public/images/PXL_20260419_185806012%20(1).jpg?raw=true" 
               alt="Adam Rupsis" 
               className="w-full h-full object-cover"
             />
