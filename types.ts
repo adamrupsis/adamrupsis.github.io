@@ -2,9 +2,11 @@ export interface Project {
   id: string;
   title: string;
   category: string;
+  subcategory?: string;
   shortDescription: string;
   fullDescription: string;
   imageUrl: string;
+  coverFit?: 'cover' | 'contain';
   images?: string[];
   technologies: string[];
   link?: string;

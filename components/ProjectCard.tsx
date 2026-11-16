@@ -20,7 +20,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           <img
             src={project.imageUrl}
             alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className={`w-full h-full ${project.coverFit === 'contain' ? 'object-contain' : 'object-cover'} transition-transform duration-500 group-hover:scale-105`}
             onError={() => setImageError(true)}
           />
         ) : (

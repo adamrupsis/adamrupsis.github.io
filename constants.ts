@@ -49,11 +49,54 @@ Due to the nature of FlightHouse's work, I am unable to show media from many of 
   }
 ];
 
+const DBF_2026_27_PROJECTS: Project[] = [
+  {
+    id: 'towed-sensor-simulation',
+    title: 'Towed Sensor Flight Simulation',
+    category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2026-27 Season',
+    shortDescription: 'Physics-based MATLAB simulation of the 2026-27 competition aircraft flying with a sensor payload towed beneath it.',
+    fullDescription: `- Built a physics-based simulation in MATLAB of the 2026-27 competition aircraft flying with a sensor payload towed on a line beneath it
+- Models the coupled motion of the aircraft and the towed sensor through the straights and turns of the competition lap
+- Animates each simulated flight so the behavior of the system can be checked visually
+- Feeds the simulated lap performance into the team's scoring analysis, which is used to choose the aircraft configuration for the season
+Results from the scoring analysis are not shown here because the competition season is still in progress.`,
+    imageUrl: '/images/dbf-turn-animation.gif',
+    coverFit: 'contain',
+    technologies: ['MATLAB', 'Flight Dynamics', 'Trajectory Simulation', 'Numerical Simulation', 'Scoring Analysis'],
+    link: '#',
+    github: '#',
+    date: '2026 – Present'
+  },
+  {
+    id: 'prototype-aircraft',
+    title: 'Prototype Aircraft',
+    category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2026-27 Season',
+    shortDescription: 'Designed the wing for a prototype of the 2026-27 competition aircraft, from airfoil analysis and AVL modeling through CAD.',
+    fullDescription: `- Designed the wing for a prototype of the 2026-27 competition aircraft
+- Analyzed candidate airfoils in XFLR5
+- Iterated the wing and H-tail geometry in AVL to check trim, stability, and the spanwise lift distribution
+- Modeled the wing's built-up rib and spar structure in CAD for manufacturing`,
+    imageUrl: '/images/dbf-prototype-wing-cover.png',
+    images: [
+      '/images/dbf-prototype-wing-cad.png',
+      '/images/dbf-prototype-avl-geometry.png',
+      '/images/dbf-prototype-avl-treffetz.png'
+    ],
+    technologies: ['Wing Design', 'AVL', 'XFLR5', 'CAD', 'Aerodynamics', 'Stability'],
+    link: '#',
+    github: '#',
+    date: '2026'
+  }
+];
+
 const AIAA_PROJECTS: Project[] = [
   {
     id: 'open-vehicle-sketch-pad',
     title: 'Open Vehicle Sketch Pad (VSP)',
     category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2025-26 Season',
     shortDescription: 'Aircraft modeling, drag estimation, and stability analysis for the 2025-26 and 2026-27 competition aircraft using NASA\'s OpenVSP and AVL.',
     fullDescription: `- Created a preliminary model of the 2025-26 competition aircraft in NASA's OpenVSP
 - Determined fuselage sizing based on passenger and cargo subsystem requirements and center of gravity calculations
@@ -69,6 +112,7 @@ const AIAA_PROJECTS: Project[] = [
     id: 'aircraft-fuselage-2026',
     title: '2025-26 Competition Aircraft Fuselage',
     category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2025-26 Season',
     shortDescription: 'Designed and led the manufacturing of the 2025-26 competition fuselage through three iterations, contributing to a 7th place finish out of 98 teams.',
     fullDescription: `- Designed the fuselage for the 2025-26 competition aircraft in SolidWorks and led its manufacturing
 - Carried the design through three iterations, using flight test results to drive subsystem design changes
@@ -93,6 +137,7 @@ const AIAA_PROJECTS: Project[] = [
     id: 'wind-tunnel-testing',
     title: 'Wind Tunnel Testing',
     category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2025-26 Season',
     shortDescription: 'Conducted low speed wind tunnel testing to measure banner drag and feed the scoring analysis and fuselage design.',
     fullDescription: `- Conducted tests in Georgia Tech's low speed wind tunnel to obtain preliminary drag estimates for banners of various sizes and materials
 - Designed a testing mount and release system that attached to a load cell to measure drag
@@ -112,6 +157,7 @@ const AIAA_PROJECTS: Project[] = [
     id: 'banner-deployment',
     title: 'Banner Deployment Mechanism',
     category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2025-26 Season',
     shortDescription: 'Led a 10-member subteam through the design and manufacturing of a mechanism to remotely deploy and release an 8 ft banner in flight.',
     fullDescription: `- Led a 10-member subteam through the design and manufacturing of a mechanism to remotely deploy and release an 8 ft banner
 - Sized the system using banner drag loads measured in wind tunnel testing
@@ -127,6 +173,7 @@ const AIAA_PROJECTS: Project[] = [
     id: 'flight-testing',
     title: 'Flight Testing',
     category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2025-26 Season',
     shortDescription: 'Pilot for every flight test and competition flight, with the final go/no-go call on each one.',
     fullDescription: `- Serve as the pilot for all flight tests and competition flights, and as a test pilot for the SAE Aero Design Advanced team
 - Make the final go/no-go decision on every flight
@@ -148,6 +195,7 @@ const AIAA_PROJECTS: Project[] = [
     id: 'manufacturing',
     title: 'Manufacturing',
     category: 'AIAA Design, Build, Fly Club',
+    subcategory: '2025-26 Season',
     shortDescription: 'Aircraft manufacturing with wood, carbon fiber, and composites using laser cutters, waterjets, and 3D printing.',
     fullDescription: `- Used laser cutters, waterjets, and 3D printers to manufacture parts from balsa and plywood, carbon fiber, and plastics
 - Strengthened joints using wet layups of carbon fiber and epoxy
@@ -167,13 +215,14 @@ const AIAA_PROJECTS: Project[] = [
 
 export const ALL_PROJECTS: Project[] = [
   ...FLIGHTHOUSE_PROJECTS,
+  ...DBF_2026_27_PROJECTS,
   ...AIAA_PROJECTS
 ];
 
 export const FEATURED_PROJECTS: Project[] = [
-  FLIGHTHOUSE_PROJECTS[0], // Tilt rotor redesign
-  AIAA_PROJECTS[1], // Fuselage
-  AIAA_PROJECTS[3]  // Banner Deployment
+  AIAA_PROJECTS[1], // 2025-26 fuselage
+  DBF_2026_27_PROJECTS[0], // Towed sensor simulation
+  DBF_2026_27_PROJECTS[1]  // Prototype aircraft
 ];
 
 export const ABOUT_TEXT = `Aerospace engineering BS/MS student at the Georgia Institute of Technology with experience in aircraft design, team leadership, and flight testing. Passionate about contributing to the development of advanced flight systems, particularly high-efficiency airframes and autonomous control architectures.`;

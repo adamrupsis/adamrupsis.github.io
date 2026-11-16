@@ -72,7 +72,9 @@ export const ProjectDetail: React.FC = () => {
             {project.date}
           </span>
           <span className="w-1 h-1 bg-slate-300 rounded-full"></span>
-          <span className="font-medium text-gtgold">{project.category}</span>
+          <span className="font-medium text-gtgold">
+            {project.category}{project.subcategory ? `, ${project.subcategory}` : ''}
+          </span>
         </div>
         
         <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
